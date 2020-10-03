@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reto-Angular6';
+  menu = [{
+    'Reserva de Salas': {
+      visible: true,
+    },
+    'Reporte de problemas': {
+      visible: true,
+    },
+    'Mi equipo': {
+      visible: true,
+    },
+    'Comunicados': {
+      visible: true,
+    },
+    'Ficha de síntomatología': {
+      visible: true,
+    },
+
+  }]
 }
