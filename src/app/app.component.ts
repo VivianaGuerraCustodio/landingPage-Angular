@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reto-Angular6';
+  items: [{
+    'name': "Reserva de Salas";
+    'img': '../assets/reserve.png'
+  }, {
+
+  }, {
+
+  }, {
+
+  }]
   menu = [{
     'Reserva de Salas': {
       visible: true,

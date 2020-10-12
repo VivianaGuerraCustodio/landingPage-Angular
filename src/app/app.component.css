@@ -1,34 +1,44 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+    overflow-y: hidden;
 }
 
 .logo-welcome-msg {
     background: #FFFFFF;
-    margin:0;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    justify-content: justify;
+    display: flex;
+    margin-left: 10px;
+}
+
+.bgOt {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 1000px;
 }
 
 .logo {
-    box-sizing: border-box;
     box-shadow: 0px 0px 8px 0px #000000 10%;
     padding-top: 15px;
-    margin-left: 242px;
+}
+
+.container {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-family: Mark;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 29px;
+    font-family: 'Inter', sans-serif;
+    line-height: 30px;
     color: #000013;
-    margin-left: 242px;
     padding: 14px 0;
 }
 
@@ -45,7 +55,6 @@ footer {
     position: absolute;
     height: 84px;
     left: 0;
-    top: 719px;
     right: 0;
     color: #fff;
     background: #000000;
@@ -53,42 +62,37 @@ footer {
 
 .items {
     display: flex;
-    width: 1000px;
-    height: 600px;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    background-color: #e5e8e899;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .container-menu-items {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background: #E5E5E5;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
     padding-top: 20px;
-    padding-bottom: 20px;
-    overflow-x: scroll;
+    height: 412px;
+    overflow: scroll;
 }
 
 .item-1 {
     display: flex;
     margin: 20px;
     padding: 10px;
-    width:198px;
-    height: 196px;;
+    width: 198px;
+    height: 196px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: white;
     border-radius: 12px;
     box-sizing: border-box;
+}
+
+.item-1:hover {
+    background-image: url('src/assets/circleYellow.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 29px;
+    background-origin: content-box;
 }
 
 .img-in-items {
